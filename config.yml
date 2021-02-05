@@ -1,0 +1,16 @@
+title: Best world activities
+description: Promotion
+template:
+  repo: best-world-activities-template
+  name: best-world-activities
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
